@@ -3,10 +3,10 @@ from django.shortcuts import render
 import random
 
 def home(request):
-	return render(request, "home.html")
+	return render(request, "home.html", name = "test")
 
 def about(request):
-	return render(request, 'about.html')
+	return render(request, 'about.html', name = "test")
 
 def password(request):
 	password = ''
